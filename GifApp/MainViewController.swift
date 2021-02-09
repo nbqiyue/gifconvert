@@ -98,7 +98,7 @@ class MainViewController: UIViewController {
         }
         // 调用 NSGIF 生成图片
         // 6fps
-        NSGIF.createGIFfromURL(url, withFrameCount: Int32(ceil(6 * duration)), delayTime: 0, loopCount: 0) { (gifUrl: URL?) in
+        NSGIF.createGIFfromURL(url, withFrameCount: Int32(ceil(6 * duration)), delayTime: 0, loopCount: 65535) { (gifUrl: URL?) in
             // hud 移除
             DispatchQueue.main.async {
                 hud!.hide(animated: true)
