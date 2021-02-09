@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="GifApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="sam-QV-Lmk" id="NEi-we-NAe"/>
+                <outlet property="selectButton" destination="jP0-mM-k6y" id="eYo-Rd-2Nz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Lkf-3y-OK0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sam-QV-Lmk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择需要转换的视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84w-kv-sxR">
+                            <rect key="frame" x="78.5" y="244.5" width="163.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频越长, 转换所需的时间就越久" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF5-cd-0Xw">
+                            <rect key="frame" x="41" y="272" width="238" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="kF5-cd-0Xw" firstAttribute="top" secondItem="84w-kv-sxR" secondAttribute="bottom" constant="8" symbolic="YES" id="96F-gW-RW9"/>
+                        <constraint firstItem="84w-kv-sxR" firstAttribute="centerX" secondItem="sam-QV-Lmk" secondAttribute="centerX" id="qpT-Nf-uhT"/>
+                        <constraint firstItem="kF5-cd-0Xw" firstAttribute="centerX" secondItem="84w-kv-sxR" secondAttribute="centerX" id="sFe-sp-epA"/>
+                        <constraint firstItem="84w-kv-sxR" firstAttribute="centerY" secondItem="sam-QV-Lmk" secondAttribute="centerY" id="ydE-L7-5oA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP0-mM-k6y">
+                    <rect key="frame" x="210" y="508" width="90" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="w2Y-qT-SAm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="选择视频">
+                        <color key="titleColor" red="0.015686274510000001" green="0.66274509800000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectVideoAction:" destination="-1" eventType="touchUpInside" id="WOx-nb-Lxn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urj-B4-O0m">
+                    <rect key="frame" x="20" y="508" width="90" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="清空">
+                        <color key="titleColor" red="1" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cleanAction:" destination="-1" eventType="touchUpInside" id="0uL-Ar-LVi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="urj-B4-O0m" firstAttribute="centerY" secondItem="jP0-mM-k6y" secondAttribute="centerY" id="Mkv-0F-MQF"/>
+                <constraint firstItem="urj-B4-O0m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Nja-RE-jxJ"/>
+                <constraint firstItem="jP0-mM-k6y" firstAttribute="width" secondItem="urj-B4-O0m" secondAttribute="width" id="QBr-Ib-fAx"/>
+                <constraint firstItem="jP0-mM-k6y" firstAttribute="leading" secondItem="urj-B4-O0m" secondAttribute="trailing" constant="100" id="QKg-Xf-S1G"/>
+                <constraint firstItem="jP0-mM-k6y" firstAttribute="height" secondItem="urj-B4-O0m" secondAttribute="height" id="S2X-hR-NHv"/>
+                <constraint firstItem="sam-QV-Lmk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="k9M-1i-2KV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sam-QV-Lmk" secondAttribute="trailing" id="nVr-2W-q6r"/>
+                <constraint firstAttribute="bottom" secondItem="jP0-mM-k6y" secondAttribute="bottom" constant="20" id="owf-Uv-L2f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sam-QV-Lmk" secondAttribute="bottom" constant="60" id="p3F-yn-qPy"/>
+                <constraint firstItem="sam-QV-Lmk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vfi-w1-gn5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jP0-mM-k6y" secondAttribute="trailing" constant="20" id="x7V-sB-Gtg"/>
+            </constraints>
+            <point key="canvasLocation" x="-1599" y="-85"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

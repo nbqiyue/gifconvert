@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-GifApp/Pods-GifApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/NSGIF/NSGIF.framework
+${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework

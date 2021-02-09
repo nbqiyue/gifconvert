@@ -1,0 +1,28 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - MBProgressHUD (1.2.0)
+  - NSGIF (1.2.4)
+  - TZImagePickerController (3.4.8)
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - MBProgressHUD
+  - NSGIF
+  - TZImagePickerController
+
+SPEC REPOS:
+  trunk:
+    - FLAnimatedImage
+    - MBProgressHUD
+    - NSGIF
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  NSGIF: 442808fd1667ebac3d09046c3f6d4bdd6720cded
+  TZImagePickerController: 6685e6d81b8fd5453e80ba369dd4ebd6e97276ee
+
+PODFILE CHECKSUM: 0a9f2aa8e794c923b6e9163a36a9d9b508fadd9a
+
+COCOAPODS: 1.10.0.rc.1
