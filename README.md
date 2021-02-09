@@ -7,5 +7,5 @@
 
 ### 效果展示
 
-![效果展示](https://github.com/nbqiyue/gifconvert/blob/master/convert_demo.gif?raw=true)
+![效果展示](https://github.com/nbqiyue/gifconvert/blob/master/gif_demo.gif?raw=true)
 
