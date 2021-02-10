@@ -4,6 +4,7 @@
 
 - [NSGIF](https://github.com/NSRare/NSGIF)
 - [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage)
+- [TZImagePickerController](https://github.com/banchichen/TZImagePickerController)
 
 ### 效果展示
 
